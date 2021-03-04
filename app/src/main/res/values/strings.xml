@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Premier League Team</string>
+    <string name="badge_team">Badge Team</string>
+    <string name="something_wrong">There is something wrong</string>
+    <string name="banner_detail">Banner Detail</string>
+    <string name="jersey_team">Jersey Team</string>
+    <string name="stadium_team">Stadium Team</string>
+    <string name="capacity">Capacity</string>
+</resources>
