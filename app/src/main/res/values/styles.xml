@@ -9,6 +9,6 @@
         <item name="android:windowExitTransition" tools:targetApi="lollipop">@android:transition/slide_top</item>
     </style>
 
-    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="NoActionBarTheme" parent="Theme.PremierLeagueTeam.NoActionBar"/>
 
 </resources>

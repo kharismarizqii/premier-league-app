@@ -35,6 +35,7 @@ class DetailTeamActivity : AppCompatActivity() {
         binding = ActivityDetailTeamBinding.inflate(layoutInflater)
         val data = intent.getParcelableExtra<Team>(EXTRA_DATA)
 
+        actionBar?.hide()
         makeStatusBarTransparent()
 
         with(window) {
