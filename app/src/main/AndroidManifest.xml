@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PremierLeagueTeam">
-        <activity android:name=".detailteam.DetailTeamActivity"></activity>
+        <activity android:name=".detailteam.DetailTeamActivity" />
         <activity android:name=".team.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

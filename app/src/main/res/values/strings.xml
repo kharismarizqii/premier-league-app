@@ -6,4 +6,6 @@
     <string name="jersey_team">Jersey Team</string>
     <string name="stadium_team">Stadium Team</string>
     <string name="capacity">Capacity</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_favorite">Favorite Team</string>
 </resources>
