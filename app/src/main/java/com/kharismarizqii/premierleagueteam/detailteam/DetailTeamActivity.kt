@@ -1,11 +1,20 @@
 package com.kharismarizqii.premierleagueteam.detailteam
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
+import android.transition.Explode
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import com.bumptech.glide.Glide
+import com.kharismarizqii.premierleagueteam.R
 import com.kharismarizqii.premierleagueteam.core.domain.model.Team
+import com.kharismarizqii.premierleagueteam.core.utils.Helper.makeStatusBarTransparent
 import com.kharismarizqii.premierleagueteam.databinding.ActivityDetailTeamBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,11 +33,22 @@ class DetailTeamActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailTeamBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         val data = intent.getParcelableExtra<Team>(EXTRA_DATA)
-        setUI(data)
 
+        makeStatusBarTransparent()
+
+        with(window) {
+            requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+
+                exitTransition = Explode()
+                enterTransition = Explode()
+
+            }
+        }
+        setContentView(binding.root)
+        setUI(data)
     }
 
     @SuppressLint("SetTextI18n")
@@ -79,5 +99,4 @@ class DetailTeamActivity : AppCompatActivity() {
     private fun setToggle(state: Boolean) {
         binding.toggleFavorite.isChecked = state
     }
-
 }

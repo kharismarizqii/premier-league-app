@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Premier League Team</string>
     <string name="badge_team">Badge Team</string>
     <string name="something_wrong">There is something wrong</string>
@@ -8,4 +8,5 @@
     <string name="capacity">Capacity</string>
     <string name="favorite">Favorite</string>
     <string name="title_favorite">Favorite Team</string>
+    <string name="team_transition" tools:ignore="ExtraTranslation">Team Transition</string>
 </resources>

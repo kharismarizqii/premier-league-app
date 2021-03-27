@@ -1,14 +1,19 @@
 package com.kharismarizqii.premierleagueteam.team
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.transition.Explode
+import android.transition.Slide
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.Window
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kharismarizqii.githubuserapp.core.data.Resource
 import com.kharismarizqii.premierleagueteam.R
@@ -27,6 +32,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        with(window){
+            requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                exitTransition = Explode()
+                enterTransition = Explode()
+            }
+        }
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -41,7 +55,11 @@ class MainActivity : AppCompatActivity() {
             Log.e("state", "${selectedData.isFavorite}")
             Intent(this, DetailTeamActivity::class.java).also {
                 it.putExtra(DetailTeamActivity.EXTRA_DATA, selectedData)
-                startActivity(it)
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    startActivity(it, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
+                } else {
+                    startActivity(it)
+                }
             }
         }
 
