@@ -40,8 +40,7 @@ class FavoriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFavoriteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        actionBar?.title = "Favorite Team"
+        supportActionBar?.title = getString(R.string.title_favorite)
 
         teamAdapter = TeamAdapter()
         with(binding.rvTeam){

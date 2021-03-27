@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="translucent">#6F000000</color>
+    <color name="onBackground">#1f1f1f</color>
 
     <color name="primaryColor">#732171</color>
     <color name="primaryLightColor">#a450a0</color>
