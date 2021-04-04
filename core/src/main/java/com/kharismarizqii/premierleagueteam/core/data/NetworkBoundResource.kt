@@ -1,4 +1,4 @@
-package com.kharismarizqii.githubuserapp.core.data
+package com.kharismarizqii.premierleagueteam.core.data
 
 import com.kharismarizqii.premierleagueteam.core.data.source.remote.network.ApiResponse
 import com.kharismarizqii.premierleagueteam.core.utils.AppExecutors

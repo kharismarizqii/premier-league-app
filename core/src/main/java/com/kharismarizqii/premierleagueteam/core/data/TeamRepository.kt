@@ -1,10 +1,7 @@
 package com.kharismarizqii.premierleagueteam.core.data
 
 import android.util.Log
-import com.kharismarizqii.githubuserapp.core.data.NetworkBoundResource
-import com.kharismarizqii.githubuserapp.core.data.Resource
 import com.kharismarizqii.premierleagueteam.core.data.source.local.LocalDataSource
-import com.kharismarizqii.premierleagueteam.core.data.source.local.entity.TeamEntity
 import com.kharismarizqii.premierleagueteam.core.data.source.remote.RemoteDataSource
 import com.kharismarizqii.premierleagueteam.core.data.source.remote.network.ApiResponse
 import com.kharismarizqii.premierleagueteam.core.data.source.remote.response.TeamResponse

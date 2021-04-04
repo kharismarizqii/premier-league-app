@@ -15,7 +15,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.kharismarizqii.githubuserapp.core.data.Resource
+import com.kharismarizqii.premierleagueteam.core.data.Resource
 import com.kharismarizqii.premierleagueteam.R
 import com.kharismarizqii.premierleagueteam.core.ui.TeamAdapter
 import com.kharismarizqii.premierleagueteam.databinding.ActivityMainBinding
