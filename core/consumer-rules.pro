@@ -1,6 +1,6 @@
 -keep,includedescriptorclasses class net.sqlcipher.** { *; }
 -keep,includedescriptorclasses interface net.sqlcipher.** { *; }
--keep class com.kharismarizqii.premierleagueteam.favorite.FavoriteActivity {public *;}t
+-keep class com.kharismarizqii.premierleagueteam.favorite.FavoriteActivity {public *;}
 
 
 ##---------------Begin: proguard configuration for Gson ----------
