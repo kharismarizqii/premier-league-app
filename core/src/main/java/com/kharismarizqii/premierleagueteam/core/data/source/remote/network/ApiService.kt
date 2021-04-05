@@ -1,7 +1,6 @@
 package com.kharismarizqii.premierleagueteam.core.data.source.remote.network
 
 import com.kharismarizqii.premierleagueteam.core.data.source.remote.response.TeamListResponse
-import com.kharismarizqii.premierleagueteam.core.data.source.remote.response.TeamResponse
 import io.reactivex.Flowable
 import retrofit2.http.GET
 

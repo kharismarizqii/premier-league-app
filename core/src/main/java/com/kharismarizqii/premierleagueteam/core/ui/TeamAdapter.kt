@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.google.android.material.card.MaterialCardView
 import com.kharismarizqii.premierleagueteam.core.R
 import com.kharismarizqii.premierleagueteam.core.databinding.ItemTeamBinding
 import com.kharismarizqii.premierleagueteam.core.domain.model.Team

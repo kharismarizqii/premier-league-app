@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit
 @Module
 @InstallIn(ApplicationComponent::class)
 class NetworkModule {
+    @Suppress("PrivatePropertyName")
     private val BASE_URL = "https://www.thesportsdb.com/api/v1/"
 
     @Provides

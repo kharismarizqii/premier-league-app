@@ -1,18 +1,12 @@
 package com.kharismarizqii.premierleagueteam.detailteam
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.os.Bundle
 import android.transition.Explode
-import android.view.View
 import android.view.Window
-import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
 import com.bumptech.glide.Glide
-import com.kharismarizqii.premierleagueteam.R
 import com.kharismarizqii.premierleagueteam.core.domain.model.Team
 import com.kharismarizqii.premierleagueteam.core.utils.Helper.makeStatusBarTransparent
 import com.kharismarizqii.premierleagueteam.databinding.ActivityDetailTeamBinding

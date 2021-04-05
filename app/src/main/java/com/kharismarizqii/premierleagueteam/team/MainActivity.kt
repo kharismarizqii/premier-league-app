@@ -5,7 +5,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.transition.Explode
-import android.transition.Slide
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -13,10 +12,9 @@ import android.view.View
 import android.view.Window
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.kharismarizqii.premierleagueteam.core.data.Resource
 import com.kharismarizqii.premierleagueteam.R
+import com.kharismarizqii.premierleagueteam.core.data.Resource
 import com.kharismarizqii.premierleagueteam.core.ui.TeamAdapter
 import com.kharismarizqii.premierleagueteam.databinding.ActivityMainBinding
 import com.kharismarizqii.premierleagueteam.detailteam.DetailTeamActivity
