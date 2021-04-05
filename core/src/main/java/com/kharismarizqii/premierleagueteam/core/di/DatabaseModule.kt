@@ -17,8 +17,6 @@ import javax.inject.Singleton
 @InstallIn(ApplicationComponent::class)
 class DatabaseModule {
 
-
-
     @Singleton
     @Provides
     fun provideDatabase(@ApplicationContext context: Context): TeamDatabase {
