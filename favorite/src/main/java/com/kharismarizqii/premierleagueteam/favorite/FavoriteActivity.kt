@@ -2,6 +2,8 @@ package com.kharismarizqii.premierleagueteam.favorite
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -58,6 +60,7 @@ class FavoriteActivity : AppCompatActivity() {
 
         viewModel.team.observe(this, { team ->
             if (team !=null){
+                binding.emptyFavorite.root.visibility = if (team.isNotEmpty()) View.GONE else View.VISIBLE
                 teamAdapter.setData(team)
             }
         })

@@ -30,4 +30,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <include
+        android:id="@+id/empty_favorite"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        layout="@layout/view_empty"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
